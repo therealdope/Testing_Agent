@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: var(--font-inter), 'Inter Placeholder', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
+}
+
+.element-with-scrollbar {
+    overflow: auto;
+    /* or scroll */
+}
+
+.element-with-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: var(--framer-font-family);
+}
+
+
+/* Loader styles */
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    --_c: no-repeat radial-gradient(farthest-side, #25b09b 92%, #0000);
+    background: var(--_c) top, var(--_c) left, var(--_c) right, var(--_c) bottom;
+    background-size: 12px 12px;
+    animation: l7 1s infinite;
+}
+
+@keyframes l7 {
+    to {
+        transform: rotate(0.5turn);
+    }
+}
+
+@layer utilities {
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari and Opera */
+    }
+}
+
+/* Add these styles to your globals.css */
+@layer components {
+  .section-divider {
+    @apply border-r border-gray-700;
+  }
+  
+  .content-section {
+    @apply bg-gray-800 rounded-lg p-6 mb-6 shadow-lg;
+  }
+  
+  .section-header {
+    @apply text-xl font-semibold text-blue-300 mb-4;
+  }
+  
+  .dropdown-button {
+    @apply flex items-center justify-between w-full text-left text-lg font-semibold text-blue-300 hover:text-blue-400 transition-colors duration-200;
+  }
+  
+  .dropdown-content {
+    @apply mt-4 bg-gray-700 rounded-lg p-4;
+  }
+}
