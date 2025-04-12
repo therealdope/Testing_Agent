@@ -112,10 +112,10 @@ export default function OutputSection({ output, isLoading, createdAt, userId, is
     <div className="space-y-4 bg-gray-800 p-6 rounded-lg">
       {output ? (
         <div className="space-y-4">
-          {renderSection('Test Results', getContent('test_file'), 'test_results')}
-          {renderSection('Components Analysis', getContent('components'), 'components')}
-          {renderSection('Test Logs', getContent('logs'), 'logs')}
-          {renderSection('Responsive Testing', getContent('responsive_tests'), 'responsive')}
+          {renderSection('Responsive Testing Log', getContent('responsive_tests'), 'responsive')}
+          {renderSection('Functional Test Log', getContent('logs'), 'logs')}
+          {renderSection('Components Analysis Log', getContent('components'), 'components')}
+          {renderSection('Generated Test File', getContent('test_file'), 'test_results')}
           {renderScreenshots(getContent("screenshots"))}
         </div>
       ) : (
