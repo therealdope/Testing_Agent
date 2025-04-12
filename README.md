@@ -7,7 +7,14 @@ Welcome to the **Testing Agent**! Click the link below to visit the live site:
 [![🔍 Website](https://img.shields.io/badge/🔍-Live%20Website-blue)](https://testing-agent-skheni.vercel.app/)
 
 ---
-##### A web application that helps developers test their websites by comparing Figma designs with live websites and generating automated test cases.
+### Video Preview
+
+[![Watch the video](https://img.youtube.com/vi/7_ihqWgj3sg/0.jpg)](https://youtu.be/7_ihqWgj3sg?si=JsQfsBPiyXTIe72C)
+
+###### Click on the thumbnail above to watch the video.
+
+---
+#### A web application that helps developers test their websites by comparing Figma designs with live websites and generating automated test cases.
 
 Its not the best but not the least.
 
